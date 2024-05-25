@@ -21,7 +21,7 @@ const personalMoveDB = {
 
 function rememberMyFilms() {
 	for (let i = 0; i < 2; i++) {
-		const lastFilm = prompt("Один их последних просмотренных фильмов ?", ""),
+		const lastFilm = prompt("Один их последних просмотренных фильмов ?", "").trim(),
 			lastFilmRating = +prompt("На сколько оцените его ?", "");
 
 		if (
